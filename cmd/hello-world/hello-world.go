@@ -15,7 +15,7 @@ func main() {
 	r.Get("/ping", ping)
 	
 	srv := &http.Server{
-		//Addr:    ":9001",
+		Addr:    ":9001",
 		Handler: r,
 	}
 
